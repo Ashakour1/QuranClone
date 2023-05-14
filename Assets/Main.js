@@ -52,7 +52,7 @@ const searchSurah = (e) =>{
 const getAllSurah = async () =>{
 
     loader.style.display  ='block'
-    let request = await fetch('http://api.alquran.cloud/v1/quran/quran-uthmani');
+    let request = await fetch('https://api.alquran.cloud/v1/quran/quran-uthmani');
 
     let surah = await request.json();
 
