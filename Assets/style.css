@@ -229,7 +229,7 @@ p{
 @media screen and (min-width : 400px) {
     .surah-lists{
         grid-template-columns: 1fr;
-        width: 300px;
+        width: 500px;
     }
     .section{
         width: 100%;
