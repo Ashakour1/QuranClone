@@ -22,7 +22,7 @@ const buildDom = (surahNumber,surahEnglish,surahArabic,description,surahAyah) =>
 
    <div class="surah-arabic-container">
     <div class="surah-arabic">
-        <a href=http://127.0.0.1:5500/QuraanApp/tafsiir.html?id=${surahNumber}" id="surah-ar">${surahArabic}</a>
+        <a href=tafsiir.html?id=${surahNumber}" id="surah-ar">${surahArabic}</a>
         <p id="number">${surahAyah} Ayahs</p>
     </div>
    </div>
@@ -56,13 +56,13 @@ const getAllSurah = async () =>{
 
     let surah = await request.json();
 
-    console.log(surah)
+    // console.log(surah)
     loader.style.display  ='none'
 
     surah.data.surahs.forEach( (sura) => {
 
         buildDom(sura.number,sura.englishName,sura.name,sura.englishNameTranslation,sura.ayahs.length);
-        console.log(sura.ayahs)
+        // console.log(sura.ayahs)
     })
 
 
