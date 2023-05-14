@@ -14,7 +14,7 @@ const buildDom = (surahNumber,surahEnglish,surahArabic,description,surahAyah) =>
   
    <div class="surah-english-container">
     <div class="surah-english">
-        <a href="http://127.0.0.1:5500/QuraanApp/tafsiir.html?id=${surahNumber}" id="surah-eng">${surahEnglish}</a>
+        <a href="tafsiir.html?id=${surahNumber}" id="surah-eng">${surahEnglish}</a>
         <p id="description">${description}</p>
     </div>
     
