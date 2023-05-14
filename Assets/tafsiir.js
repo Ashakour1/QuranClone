@@ -39,7 +39,7 @@ const biuldDom = (ayah, ayahNum) => {
 
 const reading = async (num) => {
 
-    let response = await fetch(`http://api.alquran.cloud/v1/surah/${num}?offset=${offset}&limit=1`);
+    let response = await fetch(`https://api.alquran.cloud/v1/surah/${num}?offset=${offset}&limit=1`);
 
     let surah = await response.json();
 
