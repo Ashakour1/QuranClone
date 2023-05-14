@@ -206,6 +206,13 @@ p{
         grid-template-columns: 1fr;
         width: 500px;
     }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        margin: 0 50px;
+        padding: 10px 0;
+    }
     #search{
         width: 400px;
     }
@@ -226,6 +233,13 @@ p{
     }
     #search{
         width: 400px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        margin: 0 50px;
+        padding: 10px 0;
     }
     .surah-arabic-container{
         display: flex;
