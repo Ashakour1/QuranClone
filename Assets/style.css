@@ -207,12 +207,15 @@ p{
         width: 500px;
     }
     .navigation{
-        display: flex;
+        display: none;
         justify-content: space-between;
         height: 60px;
         margin: 0 50px;
         
     }
+    
+    
+    
     #search{
         width: 400px;
     }
@@ -223,7 +226,7 @@ p{
         margin-left: 38%;
     }
 }
-@media screen and (max-width : 400px) {
+@media screen and (min-width : 400px) {
     .surah-lists{
         grid-template-columns: 1fr;
         width: 300px;
@@ -235,7 +238,7 @@ p{
         width: 400px;
     }
     .navigation{
-        display: flex;
+        display: none;
         justify-content: space-between;
         height: 60px;
         margin: 0 50px;
