@@ -266,6 +266,39 @@ p{
     #search{
         width: 550px;
     }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        margin: 0 50px;
+        padding: 10px 0;
+    }
+    .logo{
+        display: flex;
+        
+    }
+    .logo .bx-menu{
+        font-size: 25px;
+        padding-top: 7px;
+    }
+    .logo h2{
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .logo a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    .nav{
+        color: black;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .nav i{
+        color: black;
+        padding: 0 10px;
+    }
   
     
 }
@@ -284,6 +317,39 @@ p{
         align-items: center;
         margin-left: 30%;
     }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        margin: 0 50px;
+        padding: 10px 0;
+    }
+    .logo{
+        display: flex;
+        
+    }
+    .logo .bx-menu{
+        font-size: 25px;
+        padding-top: 7px;
+    }
+    .logo h2{
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .logo a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    .nav{
+        color: black;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .nav i{
+        color: black;
+        padding: 0 10px;
+    }
     
 }
 /* large screen  */
@@ -300,5 +366,38 @@ p{
         justify-content: center;
         align-items: center;
         margin-left: 30%;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        margin: 0 50px;
+        padding: 10px 0;
+    }
+    .logo{
+        display: flex;
+        
+    }
+    .logo .bx-menu{
+        font-size: 25px;
+        padding-top: 7px;
+    }
+    .logo h2{
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .logo a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    .nav{
+        color: black;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .nav i{
+        color: black;
+        padding: 0 10px;
     }
 }
