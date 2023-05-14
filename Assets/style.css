@@ -251,6 +251,9 @@ p{
         align-items: center;
         margin-left: 38%;
     }
+    .quraan-img{
+        width: 200px;
+    }
 }
 /* tablets */
 @media screen and (min-width : 600px) {
