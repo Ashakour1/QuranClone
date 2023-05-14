@@ -216,6 +216,21 @@ p{
         margin-left: 38%;
     }
 }
+@media screen and (max-width : 500px) {
+    .surah-lists{
+        grid-template-columns: 1fr;
+        width: 500px;
+    }
+    #search{
+        width: 400px;
+    }
+    .surah-arabic-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 38%;
+    }
+}
 /* tablets */
 @media screen and (min-width : 600px) {
     .surah-lists{
