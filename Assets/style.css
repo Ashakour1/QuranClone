@@ -64,7 +64,9 @@
 }
 
 
-
+.quraan-img img{
+    width: 450px;
+}
 
 .section.searchArea{
    position: relative;
@@ -252,7 +254,7 @@ p{
         margin-left: 38%;
     }
     .quraan-img img{
-        width: 350px;
+        width: 400px;
     }
 }
 /* tablets */
