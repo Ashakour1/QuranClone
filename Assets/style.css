@@ -221,6 +221,9 @@ p{
         grid-template-columns: 1fr;
         width: 300px;
     }
+    .section{
+        width: 100%;
+    }
     #search{
         width: 400px;
     }
