@@ -216,10 +216,10 @@ p{
         margin-left: 38%;
     }
 }
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 400px) {
     .surah-lists{
         grid-template-columns: 1fr;
-        width: 500px;
+        width: 300px;
     }
     #search{
         width: 400px;
