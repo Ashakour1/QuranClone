@@ -26,10 +26,10 @@ const biuldDom = (ayah, ayahNum) => {
         container.innerHTML += `<div id="bisin"> <a href"#" dir="rtl" lang="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</a></div>`;
         
         container.innerHTML += `<div style="padding-bottom:100px" id="aayah"><a href="" dir='rtl' lang='ar'>${ayahSplit[1]}<img src="./Assets/images/ayah.png" id="ayah-sign"><span id="ayah-number">${ayahNum}</span></a></div>`;
-        tafsiirSo(exactSurah[1],ayahNum);
+       
     }else{
         container.innerHTML += `<div id="aayah"><a href="" dir='rtl' lang='ar'>${ayah}<img src="./Assets/images/ayah.png" id="ayah-sign"><span id="ayah-number">${ayahNum}</span></a></div>`;
-        tafsiirSo(exactSurah[1],ayahNum);
+        
  
     }
 
@@ -39,7 +39,7 @@ const biuldDom = (ayah, ayahNum) => {
 
 const reading = async (num) => {
 
-    let response = await fetch(`https://api.alquran.cloud/v1/surah/${num}?offset=${offset}&limit=1`);
+    let response = await fetch(`http://api.alquran.cloud/v1/surah/${num}`);
 
     let surah = await response.json();
 
@@ -49,33 +49,7 @@ const reading = async (num) => {
     
 
 }
-const tafsiirSo = async (surahNum, ayahNum) => {
 
-    let response = await fetch(`./quraanJson/${surahNum}.json`);
-
-    let surah = await response.json();
-
-    // console.log();
-
-    container.innerHTML+=`<div  dir='ltr' lang='en'><a id="aayah-tafsiir"  href="">${surah.result[ayahNum-1].translation}</a></div><hr>`;
-
-    console.log(surah.result);
-    
-
-}
 
 reading(exactSurah[1]);
 
-document.addEventListener('scroll', () => {
-    const {scrollTop,scrollHeight,clientHeight} = document.documentElement;
-
-    if(scrollTop + clientHeight >= scrollHeight){
-        
-        setTimeout( () => {
-            offset++;
-            reading(exactSurah[1]);
-
-        },1000);
-
-    }
-})
